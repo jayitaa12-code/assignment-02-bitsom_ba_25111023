@@ -1,0 +1,9 @@
+## Vector DB Use Case
+
+A traditional keyword-based database search would not be sufficient for a system that allows lawyers to query large legal contracts using natural language. Keyword search relies on exact word matches and fails to capture the semantic meaning of a query. For example, a query like "termination clauses" may not return relevant sections if the document uses different phrasing such as "contract cancellation terms."
+
+Vector databases address this limitation by representing text as high-dimensional embeddings that capture semantic relationships between words and sentences. Using these embeddings, the system can identify conceptually similar content even when the exact keywords do not match. This is particularly important in legal documents, where the same concept can be expressed in multiple ways.
+
+In this system, contracts would first be divided into smaller chunks and converted into vector embeddings using a language model. These embeddings would then be stored in a vector database. When a user submits a query, it is also converted into an embedding, and the system retrieves the most semantically similar chunks using similarity search techniques such as cosine similarity.
+
+This approach enables accurate and context-aware retrieval, significantly improving the usability of the system. It allows lawyers to interact with complex documents in a more intuitive way, reducing the time required to locate critical information. Therefore, a vector database plays a crucial role in enabling semantic search capabilities that traditional databases cannot provide.
